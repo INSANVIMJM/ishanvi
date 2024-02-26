@@ -168,10 +168,6 @@ h1 span {
 /* Second Section */
 
 .second-heading {
-  /* padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem; */
   margin-top: 3.125rem;
   margin-bottom: 3.125rem;
   text-align: center;
@@ -378,6 +374,19 @@ footer {
 /* Mobile and Tab */
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0px 10px;
+  }
+
+  .header-logo {
+    width: 60px;
+    border-radius: 5%;
+  }
+
+  .menu p {
+    font-size: 0.8rem;
+  }
+
   .background-hero {
     flex-direction: column;
     padding-left: 5%;
@@ -388,25 +397,57 @@ footer {
     width: 100%;
   }
 
+  .left-hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .hero-btn-group {
+    justify-content: center;
+   }
+
   h1 {
     font-size: 2rem;
     width: 100%;
+    text-align: center;
+  }
+
+  .hero-up p {
+    text-align: center;
   }
 
   .hero-down p {
     font-size: 1rem;
+    text-align: center;
   }
 
+
+
   .second-h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .second-para {
+    font-size: 0.8rem;
   }
 
   .slider img{
     width: 100%;
   }
 
+  .courses-infobox {
+    width: 100%;
+  }
+
   .courses-header {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .infobox-p {
+    font-size: 0.8rem;
   }
 
   .pnc-pane {
@@ -435,4 +476,12 @@ footer {
   .image-section img {
     width: 90%;
   }
+
+  .footer-box p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .footer-box p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+
 }
