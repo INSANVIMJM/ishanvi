@@ -278,10 +278,8 @@ h1 span {
 
 /* Fourth Section */
 #fourth-section {
-  
   background-color: #b61b0f;
 }
-
 
 .banner-fourth {
   width: 100%;
@@ -423,8 +421,6 @@ footer {
     text-align: center;
   }
 
-
-
   .second-h2 {
     font-size: 1.5rem;
   }
@@ -467,14 +463,29 @@ footer {
     text-align: center;
   }
 
+  .banner-fourth {
+    padding: 1rem;
+  }
+
+  .guidance-para {
+    font-size: 1rem;
+    
+  }
+
+  .contact-address p {
+    font-size: 1rem;
+  }
+
   .image-section {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    width: 100%;
   }
 
   .image-section img {
-    width: 90%;
+    width: 100%;
+    border-radius: 0.5rem;
   }
 
   .footer-box p:nth-child(1) {
