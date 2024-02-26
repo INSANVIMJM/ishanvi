@@ -273,6 +273,7 @@ h1 span {
   height: auto;
   border-radius: 0.5rem;
 }
+
 .course-info-buttons {
   margin: 1rem 0;
   display: flex;
@@ -472,12 +473,22 @@ footer {
     font-size: 0.8rem;
   }
 
+  .course-info-buttons {
+    gap: 1rem;
+  }
+
+  #button1, #button2 {
+    font-size: 0.8rem;
+    white-space: nowrap;
+
+  }
+
   .pnc-pane {
     flex-direction: column;
   }
   
   .pnc-pane img {
-    width: 100%;
+    width: 90%;
   }
 
   .top-para {
