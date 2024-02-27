@@ -160,6 +160,8 @@ h1 span {
 
 .hero-btn-group button:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .hero-btn-first {
@@ -291,6 +293,13 @@ h1 span {
   border-radius: 0.5rem;
 }
 
+#button1:hover, #button2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.5s;
+  
+}
+
 .courses-header {
   font-size: 2.5rem;
 }
@@ -326,16 +335,6 @@ h1 span {
   font-size: 2rem;
   font-weight: 900;
   color: #ffc107;
-}
-
-.guidance-para {
-  background-color: blue;
-  font-size: 1.8rem;
-  color: #fff;
-  font-weight: 900;
-  border-radius: 10rem;
-  padding: 10px 10px;
-  text-align: center;
 }
 
 .image-section {
@@ -477,10 +476,10 @@ footer {
     gap: 1rem;
   }
 
+
   #button1, #button2 {
     font-size: 0.8rem;
     white-space: nowrap;
-
   }
 
   .pnc-pane {
@@ -502,11 +501,6 @@ footer {
 
   .banner-fourth {
     padding: 1rem;
-  }
-
-  .guidance-para {
-    font-size: 1rem;
-    
   }
 
   .contact-address p {
