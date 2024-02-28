@@ -57,49 +57,71 @@ document.addEventListener("DOMContentLoaded", function () {
 // button1.addEventListener("click", function () {
 //   this.classList.add('button-red');
 //   button2.classList.remove('button-red');
-//   Programme.style.display = "block"; 
-//   Skills.style.display = "none"; 
+//   Programme.style.display = "block";
+//   Skills.style.display = "none";
 // });
 
 // button2.addEventListener("click", function () {
 //    this.classList.add('button-red');
 //    button1.classList.remove('button-red');
-//   Programme.style.display = "none"; 
-//   Skills.style.display = "block"; 
+//   Programme.style.display = "none";
+//   Skills.style.display = "block";
 // });
 
 // Scrolling
 
-let fourthSection = document.getElementById('fourth-section');
-let thirdSection = document.getElementById('third-section');
+let fourthSection = document.getElementById("fourth-section");
+let thirdSection = document.getElementById("third-section");
 
-document.addEventListener('DOMContentLoaded', function() {
-  let contactLink = document.querySelector('.courses');
+document.addEventListener("DOMContentLoaded", function () {
+  let contactLink = document.querySelector(".courses");
 
-  contactLink.addEventListener('click', function(event) {
-      event.preventDefault(); 
-      thirdSection.scrollIntoView({ behavior: 'smooth' }); 
+  contactLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    thirdSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  let contactLink = document.querySelector('.contact');
+document.addEventListener("DOMContentLoaded", function () {
+  let contactLink = document.querySelector(".contact");
 
-  contactLink.addEventListener('click', function(event) {
-      event.preventDefault(); 
-      fourthSection.scrollIntoView({ behavior: 'smooth' }); 
+  contactLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    fourthSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const knowMoreBtn = document.querySelector(".hero-btn-first");
   const applyNowBtn = document.querySelector(".hero-btn-second");
 
-  knowMoreBtn.addEventListener("click", function() {
-      thirdSection.scrollIntoView({ behavior: "smooth" });
+  knowMoreBtn.addEventListener("click", function () {
+    thirdSection.scrollIntoView({ behavior: "smooth" });
   });
 
-  applyNowBtn.addEventListener("click", function() {
-      fourthSection.scrollIntoView({ behavior: "smooth" });
+  applyNowBtn.addEventListener("click", function () {
+    fourthSection.scrollIntoView({ behavior: "smooth" });
   });
 });
+
+// Contact Form
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var name = document.getElementById("name").value;
+    var classValue = document.getElementById("class").value;
+    var email = document.getElementById("email").value;
+
+    var subject = "Student Details";
+    var body = "Name: " + name + "\nClass: " + classValue + "\nEmail: " + email;
+
+    body = encodeURIComponent(body);
+
+    var mailtoLink =
+      "mailto:abhiaudis@gmail.com?subject=" + subject + "&body=" + body;
+
+    window.location.href = mailtoLink;
+  });
