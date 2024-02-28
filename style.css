@@ -81,6 +81,10 @@ a {
   color: #fff;
 }
 
+.menu a {
+  color: #fff;
+}
+
 .menu p:hover {
   cursor: pointer;
   color: #ffc107;
@@ -388,6 +392,24 @@ footer {
 .footer-box p:nth-child(2) {
   font-weight: 600;
 }
+
+/* Library Page */
+.library {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.library h1 {
+  font-size: 3rem;
+  color: #1a1a1a;
+}
+
+.library-image img{
+  width: 100%;
+  height: auto; 
+}
+
 
 /* Mobile and Tab */
 
