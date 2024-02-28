@@ -45,28 +45,28 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(changeImage, 2000);
 });
 
-document.addEventListener("click", function () {});
+// document.addEventListener("click", function () {});
 
-// Button and id selection and storing in variable
-let button1 = document.getElementById("button1");
-let button2 = document.getElementById("button2");
-let Programme = document.getElementById("Programme");
-let Skills = document.getElementById("Skills");
+// // Button and id selection and storing in variable
+// let button1 = document.getElementById("button1");
+// let button2 = document.getElementById("button2");
+// let Programme = document.getElementById("Programme");
+// let Skills = document.getElementById("Skills");
 
-// Adding event listeners to the buttons
-button1.addEventListener("click", function () {
-  this.classList.add('button-red');
-  button2.classList.remove('button-red');
-  Programme.style.display = "block"; 
-  Skills.style.display = "none"; 
-});
+// // Adding event listeners to the buttons
+// button1.addEventListener("click", function () {
+//   this.classList.add('button-red');
+//   button2.classList.remove('button-red');
+//   Programme.style.display = "block"; 
+//   Skills.style.display = "none"; 
+// });
 
-button2.addEventListener("click", function () {
-   this.classList.add('button-red');
-   button1.classList.remove('button-red');
-  Programme.style.display = "none"; 
-  Skills.style.display = "block"; 
-});
+// button2.addEventListener("click", function () {
+//    this.classList.add('button-red');
+//    button1.classList.remove('button-red');
+//   Programme.style.display = "none"; 
+//   Skills.style.display = "block"; 
+// });
 
 // Scrolling
 

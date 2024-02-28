@@ -177,12 +177,14 @@ h1 span {
 }
 
 .right-hero {
+  padding-top: 2rem;
   width: 50%;
 }
 
 .right-hero img {
   width: 100%;
   height: auto;
+  border-radius: 1rem;
 }
 
 /* Second Section */
@@ -260,9 +262,9 @@ h1 span {
   width: 80%;
 }
 
-#Skills {
+/* #Skills {
   display: none;
-}
+} */
 
 .pnc-pane {
   display: flex;
