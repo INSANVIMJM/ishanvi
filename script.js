@@ -72,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let fourthSection = document.getElementById("fourth-section");
 let thirdSection = document.getElementById("third-section");
+let contactSection = document.getElementById("contact");
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let contactLink = document.querySelector(".courses");
@@ -87,41 +89,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   contactLink.addEventListener("click", function (event) {
     event.preventDefault();
-    fourthSection.scrollIntoView({ behavior: "smooth" });
+    contactSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const knowMoreBtn = document.querySelector(".hero-btn-first");
-  const applyNowBtn = document.querySelector(".hero-btn-second");
+  const freeDemoBtn = document.querySelector(".hero-btn");
 
-  knowMoreBtn.addEventListener("click", function () {
-    thirdSection.scrollIntoView({ behavior: "smooth" });
-  });
-
-  applyNowBtn.addEventListener("click", function () {
-    fourthSection.scrollIntoView({ behavior: "smooth" });
+  freeDemoBtn.addEventListener("click", function () {
+    contactSection.scrollIntoView({ behavior: "smooth" });
   });
 });
 
-// Contact Form
+// Go to other HTML file
+document.querySelector(".library").addEventListener("click", function() {
+  console.log("Hello")
+  window.location.href = "/library.html";
+});
+document.querySelector(".home").addEventListener("click", function() {
+  window.location.href = "/";
+});
 
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    var name = document.getElementById("name").value;
-    var classValue = document.getElementById("class").value;
-    var email = document.getElementById("email").value;
-
-    var subject = "Student Details";
-    var body = "Name: " + name + "\nClass: " + classValue + "\nEmail: " + email;
-
-    body = encodeURIComponent(body);
-
-    var mailtoLink =
-      "mailto:abhiaudis@gmail.com?subject=" + subject + "&body=" + body;
-
-    window.location.href = mailtoLink;
-  });
+document.querySelector(".about").addEventListener("click", function() {
+  console.log("About Us clicked"); // Check if this logs
+  window.location.href = "/about.html";
+});

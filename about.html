@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iShanvi Library</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -16,16 +16,18 @@
         <p class="home">Home</p>
       </div>
     </div>
-    <section class="library">
-      <h1>RamKiran Library</h1>
-      <div class="library-image">
-        <img
-          src="./storage/banner/RamKiran-Library.png"
-          alt=""
-          class="libraryImg"
-        />
-      </div>
+    <!-- About Us Section -->
+    <section class="about-us">
+      <h1>About Us</h1>
+      <p>
+        We are an instituition of learning focused on teaching fundamentals.
+      </p>
     </section>
+    <script>
+      document.querySelector(".home").addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

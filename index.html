@@ -11,6 +11,9 @@
     />
   </head>
   <body>
+    <a href="https://wa.me/9661211479" target="_blank" class="whatsapp-chat">
+      <img src="./storage/icon/whatsapp.png" alt="WhatsApp Icon" />
+    </a>
     <!-- Main Container -->
     <section class="container">
       <!-- First Section -->
@@ -21,8 +24,9 @@
             <p>A LEARNING PLATFORM</p>
           </a>
           <div class="menu">
-            <a href="./library.html" class="library">Library</a>
+            <p class="library">Library</p>
             <p class="courses">Courses</p>
+            <p class="about">About Us</p>
             <p class="contact">Contact</p>
           </div>
         </div>
@@ -31,18 +35,19 @@
             <div class="left-hero">
               <div class="hero-up">
                 <h1>
-                  At <span class="h1-span">iShanvi</span> We Teach Concepts
+                  At <span class="h1-span">iSHANVI</span> We Teach Concepts
                 </h1>
-                <p>At iShanvi We Prepare you for LIFE</p>
+                <p>At iSHANVI We'll Prepare you for LIFE</p>
               </div>
               <div class="hero-down">
-                <p>Join Our Classes</p>
-                <p>of upcoming courses for</p>
-                <p>Class 8th, 9th, and 10th | CBSE | ICSE | STATE</p>
+                <p>Join our Learning Institution's</p>
+                <p>upcoming Courses for class</p>
+                <br />
+                <p>8th 9th 10th</p>
+                <p>CBSE | ICSE | STATE</p>
               </div>
               <div class="hero-btn-group">
-                <button type="button" class="hero-btn-first">Know More</button>
-                <button type="button" class="hero-btn-second">Apply Now</button>
+                <button type="button" class="hero-btn">FREE DEMO</button>
               </div>
             </div>
             <div class="right-hero">
@@ -101,10 +106,6 @@
               that patently reflects the passion, hard work and efforts of our
               excellent team of expert Faculties.
             </p>
-            <!-- <p class="infobox-p courses-para-two">
-              All of these courses are designed keeping in mind the learning
-              curve of a beginner.
-            </p> -->
           </div>
           <div>
             <div class="pnc-box container">
@@ -184,7 +185,16 @@
       <section id="contact">
         <div class="contact-container">
           <h2>Contact Us</h2>
-          <form id="contactForm" action="#" method="post">
+          <form
+            id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="1f16f5d3-f807-4549-afc1-0fc091ec0a81"
+            />
             <div class="form-group">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required />
@@ -201,6 +211,7 @@
           </form>
         </div>
       </section>
+      <!-- Footer -->
       <footer>
         <div class="footer-details">
           <div class="address">
@@ -216,16 +227,25 @@
             <hr />
             <p>Email: swati.workbooks@gmail.com</p>
             <p>Phone: 9661211479</p>
+            <p>Telegram: 9523421192</p>
+            <br />
+            <div class="insta">
+              <a href="https://www.instagram.com/ishanvialearning/tagged/" class="instaicon">
+                <img src="./storage/icon/insta.png" alt="" class="instaImg" />
+              </a>
+              &nbsp;
+            </div>
           </div>
           <div class="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.561682376849!2d77.21421848745901!3d28.642896120861966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3c113a7b05%3A0xf8913afee1665916!2sNew%20Delhi%20Railway%20Station!5e0!3m2!1sen!2sin!4v1709150246183!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d282.98567792827515!2d86.8773948!3d23.8604297!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6d9509e356477%3A0x4083ae535b4ff48!2sIshanvi!5e1!3m2!1sen!2sin!4v1709203633748!5m2!1sen!2sin"
               width="600"
               height="450"
-            >
-              allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" ></iframe
-            >
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
         <div class="footer-box">
@@ -234,12 +254,13 @@
         </div>
       </footer>
     </section>
+    <script>
+      document.querySelector(".about").addEventListener("click", function () {
+        console.log("About Us clicked"); // Check if this logs
+        window.location.href = "/about.html";
+      });
+    </script>
     <script src="./script.js"></script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    ></script>
   </body>
 </html>
 

@@ -16,6 +16,15 @@
       {
         "frame-title": "off"
       }
-    ]
+    ],
+    "disown-opener": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off",
+        "link-name": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   }
 }
