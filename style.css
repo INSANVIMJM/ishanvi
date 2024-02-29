@@ -547,6 +547,10 @@ iframe {
     font-size: 0.8rem;
   }
 
+  .about {
+    text-align: center;
+  }
+
   .background-hero {
     flex-direction: column;
     padding-left: 5%;
